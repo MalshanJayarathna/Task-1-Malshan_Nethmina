@@ -1,1 +1,119 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ByteBot - Rule-Based AI Chatbot by DecodeLabs Project 1"/>
+  <title>ByteBot | Rule-Based AI Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ── Background Orbs ── -->
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+
+  <div class="app-wrapper">
+
+    <!-- ════════════════════════════════
+         SIDEBAR
+    ════════════════════════════════ -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon"><i class="fa-solid fa-robot"></i></div>
+        <div>
+          <div class="logo-title">ByteBot</div>
+          <div class="logo-sub">AI Chatbot</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section-label">CAPABILITIES</div>
+      <ul class="sidebar-menu">
+        <li class="menu-item active"><i class="fa-solid fa-comments"></i> Chat</li>
+        <li class="menu-item"><i class="fa-solid fa-brain"></i> AI Concepts</li>
+        <li class="menu-item"><i class="fa-solid fa-lightbulb"></i> Fun Facts</li>
+        <li class="menu-item"><i class="fa-solid fa-book"></i> Knowledge Base</li>
+      </ul>
+
+      <div class="sidebar-section-label">QUICK PROMPTS</div>
+      <ul class="quick-list">
+        <li class="quick-item" data-msg="hello">👋 Say Hello</li>
+        <li class="quick-item" data-msg="what is ai">🧠 What is AI?</li>
+        <li class="quick-item" data-msg="what is rule-based ai">📏 Rule-Based AI</li>
+        <li class="quick-item" data-msg="tell me a joke">😂 Tell a Joke</li>
+        <li class="quick-item" data-msg="motivate me">🚀 Motivate Me</li>
+        <li class="quick-item" data-msg="give me a quote">💭 Quote</li>
+        <li class="quick-item" data-msg="help">🆘 Help</li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>DecodeLabs · Project 1</span>
+      </div>
+    </aside>
+
+    <!-- ════════════════════════════════
+         MAIN CHAT AREA
+    ════════════════════════════════ -->
+    <main class="chat-container">
+
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <div class="bot-avatar-header"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <div class="header-name">ByteBot</div>
+            <div class="header-status"><span class="dot-online"></span>Online · Rule-Based AI</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="icon-btn" id="clearBtn" title="Clear Chat"><i class="fa-solid fa-trash"></i></button>
+          <button class="icon-btn" id="themeBtn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+        </div>
+      </header>
+
+      <!-- Messages -->
+      <div class="messages-area" id="messagesArea">
+
+        <!-- Welcome Card -->
+        <div class="welcome-card">
+          <div class="welcome-icon"><i class="fa-solid fa-robot"></i></div>
+          <h2>Hello! I'm ByteBot 👋</h2>
+          <p>I'm a rule-based AI chatbot built for <strong>DecodeLabs Project 1</strong>.<br/>
+             Ask me about AI concepts, greetings, or fun stuff!</p>
+          <div class="chip-row">
+            <span class="chip" data-msg="what is ai">What is AI?</span>
+            <span class="chip" data-msg="tell me a joke">Tell a joke</span>
+            <span class="chip" data-msg="what is ipo model">IPO Model</span>
+            <span class="chip" data-msg="help">Help</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input Bar -->
+      <div class="input-bar">
+        <div class="input-wrapper">
+          <textarea
+            id="userInput"
+            class="chat-input"
+            placeholder="Type a message... (Press Enter to send)"
+            rows="1"
+            autocomplete="off"
+          ></textarea>
+          <button class="send-btn" id="sendBtn" title="Send">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="input-hint">Powered by rule-based logic · IPO Model · DecodeLabs</div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
