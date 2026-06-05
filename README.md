@@ -174,8 +174,6 @@ bye
 - Database support
 - Sinhala language support
 
-  ...Project Demo Video...
-
 ---
 
 # 👨‍💻 Author
@@ -191,5 +189,7 @@ Batch 2026
 This project successfully demonstrates the implementation of a professional Rule-Based AI Chatbot using Python and Web technologies.
 
 The chatbot follows deterministic logic using predefined rules and provides a strong foundation for understanding core Artificial Intelligence concepts before moving into advanced Machine Learning systems.
+
+...Project Demo Video...
 
 ---
